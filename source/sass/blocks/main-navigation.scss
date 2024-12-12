@@ -1,0 +1,49 @@
+.main-navigation__button {
+  grid-area: menu;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  color: currentColor;
+  background-color: currentColor;
+  border: none;
+  cursor: pointer;
+  mask-image: url("../../__spritemap#sprite-menu-view");
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-navigation__list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.main-navigation--oppened .main-navigation__button {
+  mask-image: url("../../__spritemap#sprite-cross-view");
+}
+
+.main-navigation--oppened .main-navigation__list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: calc(100vh - 100px);
+  padding: 15px 10px 50px;
+  overflow: scroll;
+  text-transform: uppercase;
+  background-color: $primary-bg;
+  gap: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 45px 70px;
+  }
+}

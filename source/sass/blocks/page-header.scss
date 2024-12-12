@@ -1,4 +1,50 @@
 .page-header {
+  position: relative;
+  z-index: 10;
   color: $primary-light;
   background-color: $primary-bg;
 }
+
+.page-header__container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas:
+    "menu logo"
+    ".    contacts";
+  grid-template-columns: auto auto;
+  padding: 15px 15px 13px;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    grid-template-areas: "menu logo contacts";
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 45px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 40px;
+    padding: 32px 120px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.page-header__logo {
+  grid-area: logo;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+  }
+}
+
+.page-header__contacts {
+  grid-area: contacts;
+  text-align: end;
+}
+

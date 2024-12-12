@@ -1,0 +1,21 @@
+.contacts-phone {
+  color: currentColor;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus {
+    color: $primary-dark;
+  }
+
+  &:active {
+    color: $active;
+  }
+}
+
+.contacts-phone.disabled {
+  color: $disabled;
+  pointer-events: none;
+}

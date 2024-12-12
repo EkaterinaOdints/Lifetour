@@ -1,0 +1,24 @@
+.navigation-list__link {
+  padding: 3px 5px;
+  color: currentColor;
+  text-decoration: none;
+  border: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid currentColor;
+  }
+
+  &:focus {
+    border: 1px solid currentColor;
+  }
+
+  &:active {
+    color: $active;
+    border: 1px solid transparent;
+  }
+}
+
+.navigation-list__link.disabled {
+  color: $disabled;
+  pointer-events: none;
+}
