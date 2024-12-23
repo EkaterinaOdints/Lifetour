@@ -2,6 +2,25 @@ $primary-dark: #2d383f;
 $primary-light: #ffffff;
 $primary-bg: #0266c1;
 $active: #1c3374;
+$additional-light: rgba(2, 102, 193, 0.1);
 $disabled: #999999;
 $tablet-width: 768px;
 $desktop-width: 1440px;
+
+:root {
+  --swiper-pagination-color: #ffffff;
+  --swiper-pagination-bullet-size: 16px;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+  --swiper-pagination-bottom: 35px;
+  --swiper-pagination-bullet-inactive-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    --swiper-pagination-bullet-size: 20px;
+    --swiper-pagination-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --swiper-pagination-bottom: 92px;
+  }
+}

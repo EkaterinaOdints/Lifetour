@@ -1,0 +1,34 @@
+.swiper-button-wrapper .swiper-button {
+  position: static;
+  width: 37px;
+  height: 35px;
+  margin: 0;
+  background-color: $primary-bg;
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 8px;
+    background-color: $primary-light;
+    mask-image: url("../__spritemap#sprite-arrow-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
+
+.swiper-button-wrapper .swiper-button-prev {
+  transform: scale(-1, 1);
+}
+
+.swiper-button-wrapper .swiper-button-prev.swiper-button-disabled,
+.swiper-button-wrapper .swiper-button-next.swiper-button-disabled {
+  background-color: $disabled;
+  opacity: 1;
+}

@@ -21,7 +21,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 19px;
   }
 }
 

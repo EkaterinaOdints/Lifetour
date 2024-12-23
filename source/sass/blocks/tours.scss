@@ -1,0 +1,150 @@
+.tours {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 595px;
+    background-image: url("../../img/clouds/clouds-bg-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      height: 1630px;
+      background-image: url("../../img/clouds/clouds-bg-desktop@1x.png");
+      background-position-x: calc(100vw - 425px);
+      background-position-y: -92px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      background-position-x: right;
+      background-position-y: -126px;
+    }
+  }
+}
+
+.tours__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @media (min-width: $desktop-width) {
+    gap: 50px;
+  }
+}
+
+.tours__title {
+  @media (min-width: $tablet-width) {
+    max-width: 542px;
+  }
+}
+
+.tours__swiper-container {
+  position: relative;
+}
+
+.tours__swiper {
+  width: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.tours__swiper-slide img {
+  width: 290px;
+  height: 416px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+    height: 416px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+    height: 416px;
+  }
+}
+
+.tours__swiper-button-wrapper {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -88px;
+  }
+}
+
+.tours__button {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: $primary-dark;
+  text-transform: uppercase;
+  text-decoration: none;
+  gap: 12px;
+  letter-spacing: 0.04em;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 14px;
+    mask-image: url("../__spritemap#sprite-angle-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: currentColor;
+  }
+
+  &:hover {
+    color: $additional-light;
+  }
+
+  &:focus {
+    color: $primary-bg;
+  }
+
+  &:active {
+    color: $active;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
+  }
+}
+
+.tours__button.disabled {
+  color: $disabled;
+  pointer-events: none;
+}

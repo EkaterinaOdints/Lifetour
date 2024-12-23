@@ -12,26 +12,29 @@
     "menu logo"
     ".    contacts";
   grid-template-columns: auto auto;
+  width: 320px;
+  margin: 0 auto;
   padding: 15px 15px 13px;
-  gap: 16px;
   font-size: 14px;
   line-height: 14px;
+  gap: 16px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
     grid-template-areas: "menu logo contacts";
     grid-template-columns: 1fr 1fr 1fr;
+    width: 768px;
     padding: 20px 45px;
     font-size: 16px;
     line-height: 16px;
+    gap: 128px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    gap: 40px;
-    padding: 32px 120px;
-    font-size: 18px;
-    line-height: 18px;
+    width: 1440px;
+    padding: 42px 120px;
+    gap: 60px;
   }
 }
 
@@ -39,12 +42,24 @@
   grid-area: logo;
 
   @media (min-width: $desktop-width) {
-    margin-left: 32px;
+    flex-shrink: 0;
+    margin: 0 32px;
   }
 }
 
 .page-header__contacts {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
   grid-area: contacts;
+  max-width: 200px;
+  font-weight: 600;
   text-align: end;
+  gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 

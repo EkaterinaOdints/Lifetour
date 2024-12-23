@@ -1,0 +1,30 @@
+.tags-list__item {
+  display: flex;
+  align-items: center;
+  padding: 13px 19px;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  gap: 8px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.tags-list__item--days {
+  &::before {
+    background-image: url("../__spritemap#sprite-moon-view");
+  }
+}
+
+.tags-list__item--level {
+  &::before {
+    background-image: url("../__spritemap#sprite-level-view");
+  }
+}

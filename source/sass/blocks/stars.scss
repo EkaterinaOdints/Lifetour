@@ -1,0 +1,22 @@
+.stars {
+  display: flex;
+  justify-content: space-between;
+  width: 84px;
+  height: 16px;
+}
+
+.stars__item {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stars__item--filled {
+  background-image: url("../__spritemap#sprite-star-filled-view");
+}
+
+.stars__item--empty {
+  background-image: url("../__spritemap#sprite-star-view");
+}

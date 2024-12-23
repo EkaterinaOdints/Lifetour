@@ -1,0 +1,43 @@
+.title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 22px;
+
+  &::before {
+    content: attr(data-content);
+    position: relative;
+    bottom: -12px;
+    display: block;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 26px;
+    color: $primary-dark;
+    opacity: 0.03;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 25px;
+
+    &::before {
+      bottom: -25px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    font-size: 35px;
+    line-height: 35px;
+
+    &::before {
+      bottom: -38px;
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
+}

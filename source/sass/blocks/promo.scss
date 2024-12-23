@@ -1,0 +1,35 @@
+.promo {
+  background:
+    linear-gradient(90deg,
+    rgba(224, 239, 255, 1) 0%,
+    rgba(138, 169, 201, 1) 14%,
+    rgba(60, 74, 89, 1) 32%,
+    rgba(60, 74, 89, 1) 68%,
+    rgba(138, 169, 201, 1) 84%,
+    rgba(224, 239, 255, 1) 100%);
+}
+
+.promo__swiper {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.promo__swiper-pagination {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: end;
+    padding-right: 110px;
+  }
+}
+
+.promo__swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid $primary-light;
+}
+

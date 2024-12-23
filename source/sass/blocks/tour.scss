@@ -1,0 +1,109 @@
+.tour__tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  row-gap: 12px;
+}
+
+.tour__tag-location {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  background-color: $primary-bg;
+  gap: 6px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../__spritemap#sprite-pin-view");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.tour__tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.tour__tags-item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 12px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.tour__tags-item--day {
+  &::before {
+    background-image: url("../__spritemap#sprite-sun-view");
+  }
+}
+
+.tour__tags-item--night {
+  &::before {
+    background-image: url("../__spritemap#sprite-moon-view");
+  }
+}
+
+.tour__title {
+  max-width: 260px;
+  margin: 0 0 15px;
+  font-size: 24px;
+  line-height: 28px;
+
+  &::after {
+    content: "";
+    position: relative;
+    bottom: -15px;
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: $primary-light;
+    opacity: 0.2;
+  }
+}
+
+.tour__parameters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 8px;
+}
+
+.tour__parameter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 84px;
+  gap: 4px;
+}
+
+.tour__parameter-name {
+  margin: 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.tour__parameter-value {
+  margin: 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+}
