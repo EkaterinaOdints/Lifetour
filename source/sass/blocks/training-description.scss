@@ -1,0 +1,164 @@
+.training-description__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 102px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+.training-description__list {
+  position: relative;
+  display: grid;
+  font-size: 12px;
+  line-height: 18px;
+  gap: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    bottom: 11px;
+    left: 6px;
+    display: block;
+    width: 2px;
+    background-color: $primary-bg;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 232px 272px;
+    font-size: 14px;
+    line-height: 22px;
+    gap: 104px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      top: auto;
+      right: 0;
+      bottom: -2px;
+      left: 30px;
+      display: block;
+      width: auto;
+      height: 2px;
+    }
+  }
+}
+
+.training-description__item {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  max-width: 263px;
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 11px;
+    display: block;
+    flex-shrink: 0;
+    order: 2;
+    width: 14px;
+    height: 14px;
+    background-color: $primary-bg;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    order: 1;
+    width: 25px;
+    height: 25px;
+    margin-right: 9px;
+    margin-left: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 243px;
+    padding: 6px 0 6px 10px;
+
+    &::before {
+      position: absolute;
+      top: auto;
+      bottom: -8px;
+      left: 20px;
+      display: block;
+    }
+  }
+}
+
+.training-description__item--movement {
+  &::after {
+    background-image: url("../__spritemap#sprite-map-view");
+  }
+}
+
+.training-description__item--equipment {
+  &::after {
+    background-image: url("../__spritemap#sprite-boots-view");
+  }
+}
+
+.training-description__item--nature {
+  &::after {
+    background-image: url("../__spritemap#sprite-pine-tree-view");
+  }
+}
+
+.training-description__item--mountains {
+  &::after {
+    background-image: url("../__spritemap#sprite-mountains-view");
+  }
+}
+
+.training-description__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+  }
+}
+
+.training-description__item:nth-child(4) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}

@@ -10,7 +10,13 @@
     display: block;
     width: 100%;
     height: 595px;
-    background-image: url("../../img/clouds/clouds-bg-mobile@1x.png");
+    background-image:
+      image-set(
+        url("../../img/clouds/clouds-bg-mobile@1x.webp") 1x type("image/webp"),
+        url("../../img/clouds/clouds-bg-mobile@2x.webp") 2x type("image/webp"),
+        url("../../img/clouds/clouds-bg-mobile@1x.png") 1x type("image/png"),
+        url("../../img/clouds/clouds-bg-mobile@2x.png") 2x type("image/png")
+      );
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 10px;
@@ -19,7 +25,13 @@
   @media (min-width: $tablet-width) {
     &::before {
       height: 1630px;
-      background-image: url("../../img/clouds/clouds-bg-desktop@1x.png");
+      background-image:
+        image-set(
+          url("../../img/clouds/clouds-bg-desktop@1x.webp") 1x type("image/webp"),
+          url("../../img/clouds/clouds-bg-desktop@2x.webp") 2x type("image/webp"),
+          url("../../img/clouds/clouds-bg-desktop@1x.png") 1x type("image/png"),
+          url("../../img/clouds/clouds-bg-desktop@2x.png") 2x type("image/png")
+        );
       background-position-x: calc(100vw - 425px);
       background-position-y: -92px;
     }
@@ -44,8 +56,17 @@
 }
 
 .tours__title {
+  margin: 0;
+  margin-bottom: 14px;
+
   @media (min-width: $tablet-width) {
     max-width: 542px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1064px;
+    margin-bottom: 0;
   }
 }
 
@@ -63,6 +84,10 @@
   @media (min-width: $desktop-width) {
     width: 1200px;
   }
+}
+
+.trainers__swiper.swiper {
+  display: grid;
 }
 
 .tours__swiper-slide img {
@@ -85,12 +110,6 @@
   position: absolute;
   top: -60px;
   right: 0;
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    gap: 4px;
-  }
 
   @media (min-width: $desktop-width) {
     top: -88px;
@@ -101,15 +120,17 @@
   display: inline-flex;
   align-items: center;
   align-self: center;
+  max-width: 280px;
   padding: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
+  text-align: center;
   color: $primary-dark;
   text-transform: uppercase;
   text-decoration: none;
-  gap: 12px;
   letter-spacing: 0.04em;
+  gap: 12px;
 
   &::after {
     content: "";

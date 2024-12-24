@@ -135,8 +135,12 @@
         <h2 class="tours__title title" data-content="Ближайшие туры">Ближайшие туры</h2>
         <div class="tours__swiper-container">
           <div class="tours__swiper-button-wrapper swiper-button-wrapper">
-            <div class="swiper-button swiper-button-prev"></div>
-            <div class="swiper-button swiper-button-next"></div>
+            <div class="swiper-button swiper-button-prev" tabindex="0">
+              <span class="visually-hidden">Назад</span>
+            </div>
+            <div class="swiper-button swiper-button-next" tabindex="0">
+              <span class="visually-hidden">Вперёд</span>
+            </div>
           </div>
           <div class="tours__swiper swiper tours-swiper-js">
             <div class="tours__swiper-wrapper swiper-wrapper">
@@ -327,7 +331,113 @@
       </div>
     </section>
     <section class="training" data-test="training" id="training">
-      <h2>Обучение</h2>
+      <div class="training__container container">
+        <h2 class="training__title title" data-content="Обучение">Обучение</h2>
+        <div class="training__introduction-text">
+          <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+        </div>
+        <div class="trainers">
+          <h3 class="trainers__title">Наши инструкторы</h3>
+          <div class="trainers__swiper-container">
+            <div class="trainers__swiper-button-wrapper swiper-button-wrapper">
+              <div class="swiper-button swiper-button-prev" tabindex="0">
+                <span class="visually-hidden">Назад</span>
+              </div>
+              <div class="swiper-button swiper-button-next" tabindex="0">
+                <span class="visually-hidden">Вперёд</span>
+              </div>
+            </div>
+            <div class="trainers__swiper swiper trainers-swiper-js">
+              <div class="trainers__swiper-wrapper swiper-wrapper">
+                <div class="trainers__swiper-slide trainers-slide swiper-slide">
+                  <picture>
+                    <source srcset="img/instructors/Aleksandr-Prokofiev@1x.webp 1x, img/instructors/Aleksandr-Prokofiev@2x.webp 2x" type="image/webp" width="260" height="200">
+                    <img src="img/instructors/Aleksandr-Prokofiev@1x.jpg" srcset="img/instructors/Aleksandr-Prokofiev@2x.jpg 2x" alt="Александр Прокофьев." width="260" height="200">
+                  </picture>
+                  <div class="trainers-slide__text">
+                    <h4>Александр Прокофьев</h4>
+                    <div class="trainers-slide__social-wrapper">
+                      <a class="trainers-slide__social-link" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
+                      </a>
+                    </div>
+                    <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                  </div>
+                </div>
+                <div class="trainers__swiper-slide trainers-slide swiper-slide">
+                  <picture>
+                    <source srcset="img/instructors/Svetlana-Afinogenova@1x.webp 1x, img/instructors/Svetlana-Afinogenova@2x.webp 2x" type="image/webp" width="260" height="200">
+                    <img src="img/instructors/Svetlana-Afinogenova@1x.jpg" srcset="img/instructors/Svetlana-Afinogenova@2x.jpg 2x" alt="Светлана Афиногенова." width="260" height="200">
+                  </picture>
+                  <div class="trainers-slide__text">
+                    <h4>Светлана Афиногенова</h4>
+                    <div class="trainers-slide__social-wrapper">
+                      <a class="trainers-slide__social-link" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
+                      </a>
+                    </div>
+                    <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                  </div>
+                </div>
+                <div class="trainers__swiper-slide trainers-slide swiper-slide">
+                  <picture>
+                    <source srcset="img/instructors/Nadezhda-Kolesnichenko@1x.webp 1x, img/instructors/Nadezhda-Kolesnichenko@2x.webp 2x" type="image/webp" width="260" height="200">
+                    <img src="img/instructors/Nadezhda-Kolesnichenko@1x.jpg" srcset="img/instructors/Nadezhda-Kolesnichenko@2x.jpg 2x" alt="Надежда Колесниченко." width="260" height="200">
+                  </picture>
+                  <div class="trainers-slide__text">
+                    <h4>Надежда Колесниченко</h4>
+                    <div class="trainers-slide__social-wrapper">
+                      <a class="trainers-slide__social-link" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
+                      </a>
+                    </div>
+                    <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                  </div>
+                </div>
+                <div class="trainers__swiper-slide trainers-slide swiper-slide">
+                  <picture>
+                    <source srcset="img/instructors/Fedor-Kaygorodov@1x.webp 1x, img/instructors/Fedor-Kaygorodov@2x.webp 2x" type="image/webp" width="260" height="200">
+                    <img src="img/instructors/Fedor-Kaygorodov@1x.jpg" srcset="img/instructors/Fedor-Kaygorodov@2x.jpg 2x" alt="Федор Кайгородов." width="260" height="200">
+                  </picture>
+                  <div class="trainers-slide__text">
+                    <h4>Федор Кайгородов</h4>
+                    <div class="trainers-slide__social-wrapper">
+                      <a class="trainers-slide__social-link" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
+                      </a>
+                    </div>
+                    <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                  </div>
+                </div>
+                <div class="trainers__swiper-slide trainers-slide swiper-slide">
+                  <picture>
+                    <source srcset="img/instructors/Daniel-Vasnetsov@1x.webp 1x, img/instructors/Daniel-Vasnetsov@2x.webp 2x" type="image/webp" width="260" height="200">
+                    <img src="img/instructors/Daniel-Vasnetsov@1x.jpg" srcset="img/instructors/Daniel-Vasnetsov@2x.jpg 2x" alt="Даниэль Васнецов." width="260" height="200">
+                  </picture>
+                  <div class="trainers-slide__text">
+                    <h4>Даниэль Васнецов</h4>
+                    <div class="trainers-slide__social-wrapper">
+                      <a class="trainers-slide__social-link" href="#">
+                        <span class="visually-hidden">Вконтакте</span>
+                      </a>
+                    </div>
+                    <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="training__description training-description">
+          <h3 class="training-description__title">Процесс обучения</h3>
+          <ul class="training-description__list list-reset">
+            <li class="training-description__item training-description__item--movement">Изучение спортивного туристского движения</li>
+            <li class="training-description__item training-description__item--equipment">Подготовка и техническое снаряжение в походах</li>
+            <li class="training-description__item training-description__item--nature">Лекции по окружающей среде, экологии и гигиене</li>
+            <li class="training-description__item training-description__item--mountains">Разъяснение сложности горных препятствий</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="about" data-test="about" id="about">
       <h2>О нас</h2>

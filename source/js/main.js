@@ -53,17 +53,38 @@ const toursSwiper = new Swiper('.tours-swiper-js', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  loop: true,
+  loop: false,
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 18,
-      loop: false,
+      spaceBetween: 18
     },
     1440: {
       slidesPerView: 3,
-      spaceBetween: 30,
-      loop: false,
+      spaceBetween: 30
+    }
+  }
+});
+
+const trainersSwiper = new Swiper('.trainers-swiper-js', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: false,
+  initialSlide: 2,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      initialSlide: 0,
+    },
+    1440: {
+      slidesPerView: 4,
+      initialSlide: 0,
+      spaceBetween: 20,
     }
   }
 });

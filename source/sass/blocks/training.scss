@@ -1,0 +1,37 @@
+.training__container {
+  @media (min-width: $desktop-width) {
+    padding: 7px 120px 100px;
+  }
+}
+
+.training__introduction-text {
+  display: flex;
+  flex-direction: column;
+  margin: 33px 0 29px;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 805px;
+    margin: 34px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 32px 0 62px;
+  }
+}
+
+.training__introduction-text p {
+  margin: 0;
+}
+
+.training__title {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 805px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1064px;
+  }
+}

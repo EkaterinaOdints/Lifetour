@@ -21,6 +21,10 @@
   }
 }
 
+.promo__swiper.swiper {
+  display: grid;
+}
+
 .promo__swiper-pagination {
   @media (min-width: $desktop-width) {
     display: flex;
