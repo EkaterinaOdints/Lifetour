@@ -1,6 +1,6 @@
 .training__container {
   @media (min-width: $desktop-width) {
-    padding: 7px 120px 100px;
+    padding: 39px 120px 40px;
   }
 }
 
@@ -25,13 +25,16 @@
 }
 
 .training__title {
-  margin: 0;
+  margin: 17px 0 14px;
 
   @media (min-width: $tablet-width) {
     max-width: 805px;
+    margin: 20px 0 14px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1064px;
+    margin: 23px 0 0;
   }
 }
+

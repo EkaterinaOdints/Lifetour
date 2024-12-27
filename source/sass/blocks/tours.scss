@@ -56,17 +56,16 @@
 }
 
 .tours__title {
-  margin: 0;
-  margin-bottom: 14px;
+  margin: 19px 0 14px;
 
   @media (min-width: $tablet-width) {
     max-width: 542px;
-    margin-bottom: 10px;
+    margin: 20px 0 10px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1064px;
-    margin-bottom: 0;
+    margin: 23px 0 0;
   }
 }
 
