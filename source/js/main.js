@@ -36,7 +36,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const promoSwiper = new Swiper('.promo-swiper-js', {
+new Swiper('.promo-swiper-js', {
   modules: [Pagination],
   direction: 'horizontal',
   pagination: {
@@ -46,12 +46,12 @@ const promoSwiper = new Swiper('.promo-swiper-js', {
   loop: true,
 });
 
-const toursSwiper = new Swiper('.tours-swiper-js', {
+new Swiper('.tours-swiper-js', {
   modules: [Navigation],
   direction: 'horizontal',
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.tours-swiper-button-wrapper-js .swiper-button-next-js',
+    prevEl: '.tours-swiper-button-wrapper-js .swiper-button-prev-js',
   },
   loop: false,
   breakpoints: {
@@ -66,12 +66,12 @@ const toursSwiper = new Swiper('.tours-swiper-js', {
   }
 });
 
-const trainersSwiper = new Swiper('.trainers-swiper-js', {
+new Swiper('.trainers-swiper-js', {
   modules: [Navigation],
   direction: 'horizontal',
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.trainers-swiper-button-wrapper-js .swiper-button-next-js',
+    prevEl: '.trainers-swiper-button-wrapper-js .swiper-button-prev-js',
   },
   loop: false,
   initialSlide: 2,
@@ -89,4 +89,24 @@ const trainersSwiper = new Swiper('.trainers-swiper-js', {
   }
 });
 
-
+new Swiper('.reviews-swiper-js', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.reviews-swiper-button-wrapper-js .swiper-button-next-js',
+    prevEl: '.reviews-swiper-button-wrapper-js .swiper-button-prev-js',
+  },
+  loop: false,
+  slidesPerView: 'auto',
+  breakpoints: {
+    768: {
+      slidesOffsetBefore: 30,
+      slidesOffsetAfter: 30,
+    },
+    1440: {
+      spaceBetween: 90,
+      slidesOffsetBefore: 115,
+      slidesOffsetAfter: 115,
+    }
+  }
+});

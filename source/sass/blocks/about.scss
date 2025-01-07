@@ -1,5 +1,5 @@
 .about__container {
-  padding: 20px 0;
+  padding: 20px 0 0;
 
   &::before {
     content: "";
@@ -31,7 +31,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 40px 48px 40px 0;
+    padding: 40px 48px 11px 0;
 
     &::before {
       position: relative;

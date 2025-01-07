@@ -1,5 +1,7 @@
 .training-description {
-  padding-bottom: 16px;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 16px;
+  }
 }
 
 .training-description__title {
