@@ -1,0 +1,129 @@
+.advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+  padding: 19px 9px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid $additional-light;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 340px;
+    padding: 29px 19px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+    min-height: 329px;
+    padding: 39px 19px;
+  }
+}
+
+.advantage h3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 230px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  gap: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-color: $primary-bg;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 24px 24px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 42px;
+    height: 42px;
+    border: 1px solid $primary-bg;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 284px;
+    font-size: 16px;
+    line-height: 16px;
+    gap: 25px;
+
+    &::before {
+      width: 48px;
+      height: 48px;
+    }
+
+    &::after {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 340px;
+    font-size: 18px;
+    line-height: 18px;
+    gap: 30px;
+
+    &::before {
+      width: 54px;
+      height: 54px;
+    }
+
+    &::after {
+      width: 54px;
+      height: 54px;
+    }
+  }
+}
+
+.advantage--safety h3 {
+  &::before {
+    mask-image: url("../__spritemap#sprite-safety-view");
+  }
+}
+
+.advantage--knowledge h3 {
+  &::before {
+    mask-image: url("../__spritemap#sprite-crown-view");
+  }
+}
+
+.advantage--equipment h3 {
+  &::before {
+    mask-image: url("../__spritemap#sprite-boots-view");
+  }
+}
+
+.advantage--individual h3 {
+  &::before {
+    mask-image: url("../__spritemap#sprite-path-view");
+  }
+}
+
+.advantage--nature h3 {
+  &::before {
+    mask-image: url("../__spritemap#sprite-leaf-view");
+  }
+}
+
+.advantage p {
+  margin: 0;
+}
+

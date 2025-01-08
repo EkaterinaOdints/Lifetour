@@ -110,3 +110,26 @@ new Swiper('.reviews-swiper-js', {
     }
   }
 });
+
+new Swiper('.advantages-swiper-js', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.advantages-swiper-button-wrapper-js .swiper-button-next-js',
+    prevEl: '.advantages-swiper-button-wrapper-js .swiper-button-prev-js',
+  },
+  enabled: false,
+  breakpoints: {
+    768: {
+      slidesPerView: 'auto',
+    },
+    1440: {
+      enabled: true,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      centeredSlides: true,
+      initialSlide: 2,
+      slidesPerGroup: 2,
+    }
+  }
+});

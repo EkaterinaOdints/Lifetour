@@ -1,0 +1,12 @@
+.advantages-slide {
+  min-height: 239px;
+  padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.advantages-slide__wrapper {
+  height: auto;
+}
