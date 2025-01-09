@@ -133,3 +133,21 @@ new Swiper('.advantages-swiper-js', {
     }
   }
 });
+
+new Swiper('.gallery-swiper-js', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.gallery-swiper-button-wrapper-js .swiper-button-next-js',
+    prevEl: '.gallery-swiper-button-wrapper-js .swiper-button-prev-js',
+  },
+  slidesPerView: 'auto',
+  loop: true,
+  breakpoints: {
+    768: {
+    },
+    1440: {
+      enabled: false,
+    }
+  }
+});

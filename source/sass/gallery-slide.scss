@@ -1,0 +1,20 @@
+.gallery-slide.swiper-slide {
+  width: 158px;
+}
+
+.gallery-slide img {
+  width: 157px;
+  height: 129px;
+  object-fit: cover;
+}
+
+.gallery-slide:nth-child(3n + 4),
+.gallery-slide:first-child {
+  grid-row: 1/-1;
+}
+
+.gallery-slide:nth-child(3n + 4) img,
+.gallery-slide:first-child img {
+  width: 158px;
+  height: 266px;
+}

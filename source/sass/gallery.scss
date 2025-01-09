@@ -1,0 +1,8 @@
+.gallery__swiper-wrapper.swiper-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fill, 158px 157px);
+  grid-template-rows: 129px 129px;
+  row-gap: 7px;
+  column-gap: 5px;
+}
