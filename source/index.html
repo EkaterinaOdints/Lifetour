@@ -602,56 +602,56 @@
     </section>
     <section class="gallery" data-test="gallery" id="gallery">
       <div class="gallery__container">
-        <h2 class="gallery__title title" data-content="Фотогалерея">Фотогалерея</h2>
-        <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
-        <div class="gallery__swiper-button-wrapper gallery-swiper-button-wrapper-js swiper-button-wrapper">
-          <div class="swiper-button swiper-button-prev swiper-button-prev-js" tabindex="0">
-            <span class="visually-hidden">Назад</span>
-          </div>
-          <div class="swiper-button swiper-button-next swiper-button-next-js" tabindex="0">
-            <span class="visually-hidden">Вперёд</span>
+        <div class="gallery__text-wrapper">
+          <h2 class="gallery__title title" data-content="Фотогалерея">Фотогалерея</h2>
+          <div class="gallery__text-content">
+            <p>Добавляйте фото с хэштегом #лайфтур, а&nbsp;также&nbsp;отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
           </div>
         </div>
         <div class="gallery__swiper-container">
+          <div class="gallery__swiper-button-wrapper gallery-swiper-button-wrapper-js swiper-button-wrapper">
+            <div class="swiper-button swiper-button-prev swiper-button-prev-js" tabindex="0">
+              <span class="visually-hidden">Назад</span>
+            </div>
+            <div class="swiper-button swiper-button-next swiper-button-next-js" tabindex="0">
+              <span class="visually-hidden">Вперёд</span>
+            </div>
+          </div>
           <div class="gallery__swiper swiper gallery-swiper-js">
             <div class="gallery__swiper-wrapper swiper-wrapper">
-              <div class="gallery__swiper-slide gallery-slide swiper-slide">
+              <div class="gallery__swiper-slide gallery-slide swiper-slide gallery-slide--big">
                 <picture>
                   <source srcset="img/gallery/gallery-1@1x.webp 1x, img/gallery/gallery-1@2x.webp 2x" type="image/webp" width="284" height="463">
                   <img src="img/gallery/gallery-1@1x.jpg" srcset="img/gallery/gallery-1@2x.jpg 2x" alt="Путешественник на фоне горных вершин." width="284" height="463">
                 </picture>
               </div>
-              <div class="gallery__swiper-slide gallery-slide swiper-slide">
+              <div class="gallery__swiper-slide gallery-slide swiper-slide gallery-slide--small">
                 <picture>
                   <source srcset="img/gallery/gallery-2@1x.webp 1x, img/gallery/gallery-2@2x.webp 2x" type="image/webp" width="284" height="233">
                   <img src="img/gallery/gallery-2@1x.jpg" srcset="img/gallery/gallery-2@2x.jpg 2x" alt="Компания у костра." width="284" height="233">
                 </picture>
-              </div>
-              <div class="gallery__swiper-slide gallery-slide swiper-slide">
                 <picture>
                   <source srcset="img/gallery/gallery-3@1x.webp 1x, img/gallery/gallery-3@2x.webp 2x" type="image/webp" width="284" height="233">
                   <img src="img/gallery/gallery-3@1x.jpg" srcset="img/gallery/gallery-3@2x.jpg 2x" alt="Компас на фоне зеленеющих горных вершин." width="284" height="233">
                 </picture>
               </div>
-              <div class="gallery__swiper-slide gallery-slide swiper-slide">
+              <div class="gallery__swiper-slide gallery-slide swiper-slide gallery-slide--big">
                 <picture>
                   <source srcset="img/gallery/gallery-4@1x.webp 1x, img/gallery/gallery-4@2x.webp 2x" type="image/webp" width="284" height="463">
                   <img src="img/gallery/gallery-4@1x.jpg" srcset="img/gallery/gallery-4@2x.jpg 2x" alt="Отряд путешественников спускается со склона горы." width="284" height="463">
                 </picture>
               </div>
-              <div class="gallery__swiper-slide gallery-slide swiper-slide">
+              <div class="gallery__swiper-slide gallery-slide swiper-slide gallery-slide--small">
                 <picture>
                   <source srcset="img/gallery/gallery-5@1x.webp 1x, img/gallery/gallery-5@2x.webp 2x" type="image/webp" width="284" height="233">
                   <img src="img/gallery/gallery-5@1x.jpg" srcset="img/gallery/gallery-5@2x.jpg 2x" alt="Путешествие вдоль замерзшей реки." width="284" height="233">
                 </picture>
-              </div>
-              <div class="gallery__swiper-slide gallery-slide swiper-slide">
                 <picture>
                   <source srcset="img/gallery/gallery-6@1x.webp 1x, img/gallery/gallery-6@2x.webp 2x" type="image/webp" width="284" height="233">
                   <img src="img/gallery/gallery-6@1x.jpg" srcset="img/gallery/gallery-6@2x.jpg 2x" alt="Походная палатка под ночным звездным небом." width="284" height="233">
                 </picture>
               </div>
-              <div class="gallery__swiper-slide gallery-slide swiper-slide">
+              <div class="gallery__swiper-slide gallery-slide swiper-slide gallery-slide--big">
                 <picture>
                   <source srcset="img/gallery/gallery-7@1x.webp 1x, img/gallery/gallery-7@2x.webp 2x" type="image/webp" width="284" height="463">
                   <img src="img/gallery/gallery-7@1x.jpg" srcset="img/gallery/gallery-7@2x.jpg 2x" alt="Путешественники разводят костер на опушке леса." width="284" height="463">
@@ -663,7 +663,24 @@
       </div>
     </section>
     <section class="feedback" data-test="form">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <div class="feedback__container container">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div class="feedback__text-content">
+          <h3>Остались вопросы?</h3>
+          <p>Заполните форму и наш оператор свяжется с вами&nbsp;для консультации.</p>
+        </div>
+        <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="feedback-form__input-wrapper">
+            <input class="feedback-form__input" type="tel" id="phone" name="phone" placeholder="+7 (000)-000-00-00" pattern="^[^a-zA-Zа-яА-ЯёЁ]+$" required>
+            <label class="feedback-form__label" for="phone">Телефон</label>
+          </div>
+          <div class="feedback-form__input-wrapper">
+            <input class="feedback-form__input" type="email" id="email" name="email" placeholder="example@mail.ru" required>
+            <label class="feedback-form__label" for="email">Email</label>
+          </div>
+          <button class="feedback-form__button button" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
     <section class="contacts" data-test="footer" id="contacts">
       <h2>Контакты</h2>

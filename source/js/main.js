@@ -144,8 +144,6 @@ new Swiper('.gallery-swiper-js', {
   slidesPerView: 'auto',
   loop: true,
   breakpoints: {
-    768: {
-    },
     1440: {
       enabled: false,
     }
