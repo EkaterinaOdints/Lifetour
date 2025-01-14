@@ -1,9 +1,35 @@
 .button {
-  padding: 20px;
+  padding: 19px;
   font-size: 16px;
   line-height: 16px;
   color: $primary-light;
   text-decoration: none;
   background-color: $primary-bg;
-  border: none;
+  border: 1px solid $primary-bg;
+
+  &:hover {
+    color: $active;
+    background-color: transparent;
+    border-color: $active;
+  }
+
+  &:focus {
+    color: $active;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+  }
+
+  &:active {
+    color: $primary-light;
+    background-color: $active;
+    border-color: $active;
+  }
+}
+
+.button:disabled,
+.button.disabled {
+  background-color: $disabled;
+  border-color: $disabled;
+  pointer-events: none;
 }

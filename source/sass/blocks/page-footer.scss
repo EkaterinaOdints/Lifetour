@@ -1,0 +1,122 @@
+.page-footer {
+  &::before {
+    content: "";
+    position: relative;
+    top: -1px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $primary-dark;
+    opacity: 0.2;
+  }
+}
+
+.page-footer__container {
+  display: grid;
+  justify-items: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 22px 15px 20px;
+  gap: 23px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+      "logo   menu"
+      "social social"
+      "info   info";
+    width: 768px;
+    padding: 33px 45px 20px;
+    column-gap: 13px;
+    row-gap: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    grid-template-areas:
+      "logo   menu   contacts"
+      "social social social"
+      "info   info   info";
+    width: 1440px;
+    padding: 32px 120px;
+    column-gap: 29px;
+    row-gap: 22px;
+  }
+}
+
+.page-footer__logo {
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+    grid-area: logo;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: content-box;
+    padding: 7px 29px 9px;
+  }
+}
+
+.page-footer__logo svg path {
+  fill: $primary-dark;
+}
+
+.page-footer__menu-list {
+  @media (min-width: $tablet-width) {
+    grid-area: menu;
+    width: 498px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 644px;
+  }
+}
+
+.page-footer__social-list {
+  @media (min-width: $tablet-width) {
+    grid-area: social;
+  }
+}
+
+.page-footer__contacts {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    grid-area: contacts;
+  }
+}
+
+.page-footer__info {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: info;
+  }
+}
+
+.page-footer__policy {
+  color: $primary-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $additional-light;
+  }
+
+  &:focus {
+    color: $primary-bg;
+    outline: none;
+  }
+
+  &:active {
+    color: $active;
+  }
+}
+
+.page-footer__policy.disabled {
+  color: $disabled;
+  pointer-events: none;
+}

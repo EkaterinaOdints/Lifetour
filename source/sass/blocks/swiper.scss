@@ -45,6 +45,7 @@
   &:focus {
     background-color: $primary-light;
     border-color: $primary-light;
+    outline: none;
 
     &::before {
       background-color: $active;

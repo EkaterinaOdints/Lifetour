@@ -1,0 +1,28 @@
+.phone-dark {
+  font-weight: 600;
+  color: $primary-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $additional-light;
+  }
+
+  &:focus {
+    color: $primary-bg;
+    outline: none;
+  }
+
+  &:active {
+    color: $active;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.phone-dark.disabled {
+  color: $disabled;
+  pointer-events: none;
+}

@@ -1,5 +1,6 @@
-.contacts-phone {
-  color: currentColor;
+.phone-light {
+  font-weight: 600;
+  color: $primary-light;
   text-decoration: none;
 
   &:hover {
@@ -8,14 +9,20 @@
 
   &:focus {
     color: $primary-dark;
+    outline: none;
   }
 
   &:active {
     color: $active;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
-.contacts-phone.disabled {
+.phone-light.disabled {
   color: $disabled;
   pointer-events: none;
 }

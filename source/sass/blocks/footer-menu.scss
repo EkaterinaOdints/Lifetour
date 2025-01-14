@@ -1,0 +1,65 @@
+.footer-menu {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 120px 120px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  column-gap: 50px;
+  row-gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: -7px;
+    gap: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+    gap: 20px;
+  }
+}
+
+.footer-menu__item--about {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.footer-menu__item--reviews {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.footer-menu__link {
+  padding: 2px 4px;
+  color: $primary-dark;
+  text-decoration: none;
+  border: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid $primary-dark;
+  }
+
+  &:focus {
+    border: 1px solid $primary-dark;
+    outline: none;
+  }
+
+  &:active {
+    color: $primary-bg;
+    border: 1px solid transparent;
+  }
+}
+
+.footer-menu__link.disabled {
+  color: $disabled;
+  pointer-events: none;
+}
+
+.footer-menu__item:last-child {
+  margin-left: 1px;
+}
