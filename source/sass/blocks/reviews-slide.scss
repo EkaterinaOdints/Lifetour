@@ -26,12 +26,13 @@
 .reviews-slide__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 19px;
   width: 290px;
   height: 100%;
   margin: 0 auto;
   padding: 20px;
+  background-color: $primary-light;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+  gap: 19px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -67,4 +68,3 @@
     height: 253px;
   }
 }
-

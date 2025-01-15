@@ -1,6 +1,7 @@
 .advantages-slide {
   min-height: 239px;
   padding: 0 15px;
+  background-color: $primary-light;
 
   @media (min-width: $tablet-width) {
     padding: 0;

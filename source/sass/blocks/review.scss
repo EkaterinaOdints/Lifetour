@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 2px;
+    gap: 4px;
   }
 }
 
@@ -21,6 +21,7 @@
   gap: 10px;
 
   @media (min-width: $desktop-width) {
+    margin-top: -2px;
     font-size: 14px;
     line-height: 22px;
   }

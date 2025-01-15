@@ -27,8 +27,30 @@ const useMenu = () => {
   navButton.addEventListener('click', toggleMenu);
 };
 
-useMenu();
+const validateFeedbackForm = () => {
+  const form = document.querySelector('.feedback-form-js');
+  const button = form.querySelector('.feedback-button-js');
+  const inputCollection = form.querySelectorAll('.feedback-input-js');
 
+  inputCollection.forEach((input) => {
+    input.addEventListener('input', () => {
+      input.classList.remove('invalid');
+    });
+  });
+
+  const validateForm = () => {
+    inputCollection.forEach((input) => {
+      if (!input.checkValidity()) {
+        input.classList.add('invalid');
+      }
+    });
+  };
+
+  button.addEventListener('click', validateForm);
+};
+
+useMenu();
+validateFeedbackForm();
 
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -111,7 +133,7 @@ new Swiper('.reviews-swiper-js', {
   }
 });
 
-new Swiper('.advantages-swiper-js', {
+const advantagesSwiper = new Swiper('.advantages-swiper-js', {
   modules: [Navigation],
   direction: 'horizontal',
   navigation: {
@@ -119,13 +141,10 @@ new Swiper('.advantages-swiper-js', {
     prevEl: '.advantages-swiper-button-wrapper-js .swiper-button-prev-js',
   },
   enabled: false,
+  slidesPerView: 'auto',
   breakpoints: {
-    768: {
-      slidesPerView: 'auto',
-    },
     1440: {
       enabled: true,
-      slidesPerView: 'auto',
       spaceBetween: 30,
       centeredSlides: true,
       initialSlide: 2,
@@ -133,6 +152,19 @@ new Swiper('.advantages-swiper-js', {
     }
   }
 });
+
+let resizeTimeout;
+
+const updateAdvantageSwiper = () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    if (window.innerWidth < 1440) {
+      advantagesSwiper.setTranslate(0);
+    }
+  }, 10);
+};
+
+window.addEventListener('resize', updateAdvantageSwiper);
 
 new Swiper('.gallery-swiper-js', {
   modules: [Navigation],

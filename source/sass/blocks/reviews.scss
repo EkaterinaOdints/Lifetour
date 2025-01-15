@@ -1,15 +1,15 @@
 .reviews__container {
   width: 320px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding: 40px 0 10px;
+    padding: 39px 0 10px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 77px;
+    padding: 98px 0 77px;
   }
 }
 
@@ -62,4 +62,3 @@
     margin: 0;
   }
 }
-

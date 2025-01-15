@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     width: 253px;
+    gap: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,12 +33,22 @@
   }
 }
 
+.gallery-slide.gallery-slide--small {
+  @media (min-width: $tablet-width) {
+    width: 252px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 284px;
+  }
+}
+
 .gallery-slide--small picture:first-child img {
   width: 158px;
   height: 135px;
 
   @media (min-width: $tablet-width) {
-    width: 253px;
+    width: 252px;
     height: 210px;
   }
 
@@ -52,8 +63,8 @@
   height: 124px;
 
   @media (min-width: $tablet-width) {
-    width: 253px;
-    height: 201px;
+    width: 252px;
+    height: 202px;
   }
 
   @media (min-width: $desktop-width) {

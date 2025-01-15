@@ -55,6 +55,19 @@
   }
 }
 
+.page-footer__logo:hover svg path {
+  fill: $additional-light;
+}
+
+.page-footer__logo:focus svg path {
+  fill: $primary-bg;
+}
+
+.page-footer__logo:active svg path {
+  fill: $active;
+}
+
+
 .page-footer__logo svg path {
   fill: $primary-dark;
 }
