@@ -8,6 +8,7 @@
 .page-header__container {
   display: grid;
   justify-content: space-between;
+  justify-items: end;
   grid-template-areas:
     "menu logo"
     ".    contacts";
@@ -21,6 +22,7 @@
 
   @media (min-width: $tablet-width) {
     align-items: center;
+    justify-items: start;
     grid-template-areas: "menu logo contacts";
     grid-template-columns: 1fr 1fr 1fr;
     width: 768px;
@@ -59,4 +61,11 @@
   max-width: 200px;
   text-align: end;
   gap: 10px;
+}
+
+.page-header__contacts-phone {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 17px;
+  }
 }

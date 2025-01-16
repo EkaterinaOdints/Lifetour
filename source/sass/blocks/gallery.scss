@@ -94,5 +94,6 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
