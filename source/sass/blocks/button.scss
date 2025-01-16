@@ -9,14 +9,14 @@
 
   &:hover {
     color: $active;
-    background-color: transparent;
+    background-color: $primary-light;
     border-color: $active;
   }
 
   &:focus {
     color: $active;
-    background-color: transparent;
-    border-color: transparent;
+    background-color: $primary-light;
+    border-color: $primary-light;
     outline: none;
   }
 
