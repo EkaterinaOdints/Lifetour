@@ -8,10 +8,10 @@
     height: 400px;
     background-image:
       image-set(
-        url("../../img/about/about-bg-mobile@1x.webp") 1x type("image/webp"),
-        url("../../img/about/about-bg-mobile@2x.webp") 2x type("image/webp"),
-        url("../../img/about/about-bg-mobile@1x.jpg") 1x type("image/jpeg"),
-        url("../../img/about/about-bg-mobile@2x.jpg") 2x type("image/jpeg")
+        url("../img/about/about-bg-mobile@1x.webp") 1x type("image/webp"),
+        url("../img/about/about-bg-mobile@2x.webp") 2x type("image/webp"),
+        url("../img/about/about-bg-mobile@1x.jpg") 1x type("image/jpeg"),
+        url("../img/about/about-bg-mobile@2x.jpg") 2x type("image/jpeg")
       );
     background-repeat: no-repeat;
     background-position: left;
@@ -21,10 +21,10 @@
     &::before {
       background-image:
         image-set(
-          url("../../img/about/about-bg-tablet@1x.webp") 1x type("image/webp"),
-          url("../../img/about/about-bg-tablet@2x.webp") 2x type("image/webp"),
-          url("../../img/about/about-bg-tablet@1x.jpg") 1x type("image/jpeg"),
-          url("../../img/about/about-bg-tablet@2x.jpg") 2x type("image/jpeg")
+          url("../img/about/about-bg-tablet@1x.webp") 1x type("image/webp"),
+          url("../img/about/about-bg-tablet@2x.webp") 2x type("image/webp"),
+          url("../img/about/about-bg-tablet@1x.jpg") 1x type("image/jpeg"),
+          url("../img/about/about-bg-tablet@2x.jpg") 2x type("image/jpeg")
         );
     }
   }
@@ -49,10 +49,10 @@
       height: 498px;
       background-image:
         image-set(
-          url("../../img/about/about-bg-desktop@1x.webp") 1x type("image/webp"),
-          url("../../img/about/about-bg-desktop@2x.webp") 2x type("image/webp"),
-          url("../../img/about/about-bg-desktop@1x.jpg") 1x type("image/jpeg"),
-          url("../../img/about/about-bg-desktop@2x.jpg") 2x type("image/jpeg")
+          url("../img/about/about-bg-desktop@1x.webp") 1x type("image/webp"),
+          url("../img/about/about-bg-desktop@2x.webp") 2x type("image/webp"),
+          url("../img/about/about-bg-desktop@1x.jpg") 1x type("image/jpeg"),
+          url("../img/about/about-bg-desktop@2x.jpg") 2x type("image/jpeg")
         );
     }
   }
